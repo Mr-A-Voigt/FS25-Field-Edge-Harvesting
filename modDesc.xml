@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+
+<modDesc descVersion="105">
+
+    <author>Field Edge Harvesting Project</author>
+    <version>0.1.0.0</version>
+
+    <title>
+        <en>Field Edge Harvesting</en>
+        <da>Markkantshøst</da>
+    </title>
+
+    <description>
+        <en>
+            Harvest grass along field edges
+            while harvesting grain crops.
+        </en>
+        <da>
+            Høst græs langs markkanter
+            under almindelig kornhøst.
+        </da>
+    </description>
+
+    <multiplayer supported="false"/>
+
+    <extraSourceFiles>
+        <sourceFile filename="scripts/FieldEdgeHarvesting.lua"/>
+    </extraSourceFiles>
+
+</modDesc>
