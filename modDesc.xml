@@ -2,8 +2,8 @@
 
 <modDesc descVersion="105">
 
-    <author>Field Edge Harvesting Project</author>
-    <version>0.1.0.0</version>
+    <author>AVmods</author>
+    <version>1.0.0.0</version>
 
     <title>
         <en>Field Edge Harvesting</en>
@@ -11,20 +11,52 @@
     </title>
 
     <description>
-        <en>
-            Harvest grass along field edges
-            while harvesting grain crops.
-        </en>
-        <da>
-            Høst græs langs markkanter
-            under almindelig kornhøst.
-        </da>
+        <en><![CDATA[
+Field Edge Harvesting
+
+- This mod allows combine harvesters to cut grass along the edges of fields while harvesting normal crops for a more realistic experience.
+- it does not affect the yield at the moment.
+- it only only cuts grass and meadow as of now, but more plants and foliage may be added in the future.
+
+work in progress.
+functions being worked on right now:
+- add option to cut more plants and foliage.
+- add straw effects and header animations from cutting grass and meadow.
+
+bugs and suggestions are welcome, please report/suggest them on github: https://github.com/Mr-A-Voigt/FS25-Field-Edge-Harvesting/issues.
+
+github is also the place to find more information https://github.com/Mr-A-Voigt/FS25-Field-Edge-Harvesting.
+
+Wishing you a good harvest.
+            
+        ]]></en>
+        <da><![CDATA[
+Field Edge Harvesting
+
+- det her mod gør det muligt for mejetærskere at skære græs langs markernes kanter, mens du høster normale afgrøder for at give en mere realistisk oplevelse når du høster.
+- det påvirker ikke udbyttet i den nuværende version
+- det skærer kun græs i øjeblikket, men flere planter og vegetation bliver måske tilføjet i fremtiden.
+
+der udvikles stadig på moddet.
+funktioner der arbejdes på lige nu:
+- tilføj mulighed for at skære flere slags planter og vegetation.
+- tilføj halmeffekter og skærebords animationer fra afklipningen af græs.
+
+fejl og forslag er velkomne, rapporter dem venligst på github: https://github.com/Mr-A-Voigt/FS25-Field-Edge-Harvesting/issues.
+
+github er også stedet til at finde mere information https://github.com/Mr-A-Voigt/FS25-Field-Edge-Harvesting.
+
+De ønskes hermed en god høst.
+
+        ]]></da>
     </description>
 
-    <multiplayer supported="false"/>
+    <iconFilename>FEH-icon.dds</iconFilename>
+
+    <multiplayer supported="true"/>
 
     <extraSourceFiles>
-        <sourceFile filename="scripts/RealisticHeaderEdge.lua"/>
+        <sourceFile filename="RealisticHeaderEdge.lua"/>
     </extraSourceFiles>
 
 </modDesc>
