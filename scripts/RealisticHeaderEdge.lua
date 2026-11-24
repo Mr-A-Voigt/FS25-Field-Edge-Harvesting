@@ -1,3 +1,18 @@
+-- Field Edge Harvesting --
+-- Aksel v --
+-- November 2026 --
+-- version: 1.0.0.0 --
+--[[ status and functions this version
+status:
+first version of the mod
+
+functions:
+combine harvesters can now cut grass and meadow
+
+]]--
+
+-- original lua kode til FEH moddet --
+
 RealisticHeaderEdge = {}
 
 function RealisticHeaderEdge:loadMap(name)
