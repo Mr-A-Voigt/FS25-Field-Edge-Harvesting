@@ -24,7 +24,7 @@
     <multiplayer supported="false"/>
 
     <extraSourceFiles>
-        <sourceFile filename="scripts/FieldEdgeHarvesting.lua"/>
+        <sourceFile filename="scripts/RealisticHeaderEdge.lua"/>
     </extraSourceFiles>
 
 </modDesc>
