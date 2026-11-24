@@ -10,11 +10,7 @@ In real-world farming, grass and weeds can sometimes grow along field boundaries
 
 ### Planned features
 
-- **Automatic grass detection** – Detect grass when a combine header reaches grassy areas along field edges.
-- **Grass collection during grain harvesting** – Grass should enter the combine while harvesting grain, rather than being cut and left on the ground.
-- **Realistic harvesting behavior** – The system should only activate when the combine is actively harvesting.
-- **Field edge detection** – Identify grass outside the cultivated crop area.
-- **Realistic gameplay integration** – Keep the behavior as close to real-world farming as possible.
+
 
 ## Development status
 
@@ -22,20 +18,14 @@ In real-world farming, grass and weeds can sometimes grow along field boundaries
 
 This project is currently in the early development stage. Features are being researched and tested before implementation.
 
-| Feature | Status |
-|---|---|
-| Mod structure | In progress |
-| Automatic activation | Planned |
-| Grass detection | Planned |
-| Combine integration | Planned |
-| Grass collection | Planned |
-| Multiplayer support | Not yet tested |
+status:
+-
 
 ## Compatibility
 
 - Farming Simulator 25
 - PC
-- Multiplayer support: To be determined
+- Multiplayer support: To be determined (probably yes)
 
 ## Installation
 
@@ -45,12 +35,13 @@ Development versions can be installed by placing the mod folder in:
 
 A release ZIP will be provided when the mod is ready for testing.
 
+May come to modhub in the future
+
 ## Development
 
 The mod is developed using:
 
 - Lua
-- GIANTS Engine
 - XML
 - Visual Studio Code
 
