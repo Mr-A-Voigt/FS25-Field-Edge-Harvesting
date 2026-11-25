@@ -1,6 +1,6 @@
 # Field Edge Harvesting
 
-[Field Edge Harvesting mod icon](FEH-icon.png)
+<img src="FEH-icon.png" alt="Field Edge Harvesting mod icon" width="200">
 
 **A realism-focused mod for Farming Simulator 25**
 
