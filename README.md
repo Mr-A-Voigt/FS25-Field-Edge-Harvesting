@@ -56,3 +56,11 @@ The main goal is to create a mod that adds more realism to harvesting near fiels
 ## License
 
 License to be determined.
+
+## Sreenshots
+
+<img src="screenshots/Skærmbillede 2026-11-24 190427.png" alt="Field Edge Harvesting in action sreenshot" width="600">
+<img src="screenshots/Skærmbillede 2026-11-24 190518.png" alt="Field Edge Harvesting in action sreenshot" width="600">
+<img src="screenshots/Skærmbillede 2026-11-24 190701.png" alt="Field Edge Harvesting in action sreenshot" width="600">
+<img src="screenshots/Skærmbillede 2026-11-24 191625.png" alt="Field Edge Harvesting in action sreenshot" width="600">
+<img src="screenshots/Skærmbillede 2026-11-24 190953.png" alt="Field Edge Harvesting in action sreenshot" width="600">
