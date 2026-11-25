@@ -1,6 +1,6 @@
 -- Field Edge Harvesting --
 -- Aksel v --
--- November 2026 --
+-- 23 November 2026 --
 -- version: 1.0.0.0 --
 --[[ status and functions this version
 status:
@@ -9,6 +9,7 @@ first version of the mod
 functions:
 combine harvesters can now cut grass and meadow
 
+feel free to suggest ideas
 ]]--
 
 -- original lua kode til FEH moddet --
