@@ -10,9 +10,9 @@ In real-world farming, grass and weeds can sometimes grow along field boundaries
 
 ## Features
 - Grain and corn headers cut grass and meadow
+- Combine straw effects when cutting grass only
 
 ### Planned features
-- Combine straw effects when cutting grass only
 - Grass being transported on the header and fed in to the combine
 - The ability to cut weeds and short grass/meadow too (possibly being a setting)
 
