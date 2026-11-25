@@ -9,7 +9,7 @@ Status: released
 Features:
 - Grain and corn headers cut grass and meadow
 
--
+
 
 ## version: 1.1.0.0
 Status: in development
@@ -20,4 +20,4 @@ Features:
 
 see `scriptsWorkInProgress/FEHv1.1.0.0Script.lua` for the new version
 
--
+
