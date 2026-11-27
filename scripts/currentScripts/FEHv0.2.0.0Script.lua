@@ -1,21 +1,21 @@
 
 -- Field Edge Harvesting --
--- version: 1.1.0.0 --
+-- version: 0.2.0.0 --
 -- 24 November 2026 --
--- in development --
+-- testing --
 --[[
 description:
-this version is supposed to add straw effects when harvesting grass only
-the plan is to use the effect from long grain rice as it looks like grass
+this version adds chopped straw effects when harvesting grass only
+it uses the effect from long grain rice as it looks like grass
 
 status:
-partially works
-needs some refinement
+testing
 
 feel free to suggest solutions or ideas
 
 ]]
 
+-- comments are in danish, this will be translated to english in the final version --
 
 RealisticHeaderEdge = {}
 
@@ -33,8 +33,8 @@ function RealisticHeaderEdge:processCutterArea(superFunc, workArea, dt)
     local attacherVehicle = (self.getAttacherVehicle ~= nil) and self:getAttacherVehicle() or nil
     local now = g_currentMission.time
 
-    -- 2. Hvis ANY workArea rammer korn: sæt en 300 ms spærre for græs-animationen,
-    -- så yderkantens workArea ikke tænder ris-teksturen i samme frame!
+    -- 2. Hvis der høstes korn i dette workArea: sæt 300 ms spærre for græs-animationen
+    -- og genopret snitterens normale FillType, MEN returner ikke før græsset er klippet!
     if hasGrain then
         self.realisticHeaderEdgeLastGrainTime = now + 300
         self.realisticHeaderEdgeGrassTime = nil
@@ -50,9 +50,9 @@ function RealisticHeaderEdge:processCutterArea(superFunc, workArea, dt)
                 end
             end
         end
-        return realArea, area
     end
 
+    -- 3. Klip ALTID græs (MEADOW og GRASS) i dette workArea, når skærebordet er tændt og sænket
     if self.getIsTurnedOn ~= nil and self.getIsLowered ~= nil then
         if self:getIsTurnedOn() and self:getIsLowered() then
             local xs, _, zs = getWorldTranslation(workArea.start)
@@ -79,11 +79,11 @@ function RealisticHeaderEdge:processCutterArea(superFunc, workArea, dt)
                 cutGrassArea = cutGrassArea + (grassArea or 0)
             end
 
-            -- 3. Klipningen af græsset sker altid (så kanten bliver klippet rent),
-            -- men animationen tændes KUN hvis ingen del af skærebordet har høstet korn de sidste 300 ms.
+            -- 4. Aktiver kun den grønne RICE-effekt, hvis der IKKE er korn i dette workArea
+            -- og ingen del af skærebordet har høstet korn inden for de sidste 300 ms
             local recentlyHarvestedGrain = (self.realisticHeaderEdgeLastGrainTime ~= nil and self.realisticHeaderEdgeLastGrainTime > now)
 
-            if cutGrassArea > 0 and not recentlyHarvestedGrain then
+            if not hasGrain and cutGrassArea > 0 and not recentlyHarvestedGrain then
                 self.realisticHeaderEdgeGrassTime = now + 200
 
                 if attacherVehicle ~= nil and attacherVehicle.spec_combine ~= nil then
@@ -96,7 +96,7 @@ function RealisticHeaderEdge:processCutterArea(superFunc, workArea, dt)
     return realArea, area
 end
 
--- 4. Styr start og stop af skærebordets græs-effekt
+-- 5. Styr start og stop af skærebordets græs-effekt
 function RealisticHeaderEdge:onCutterUpdateTick(dt, isActiveForInput, isActiveForInputIgnoreSelection, isSelected)
     local spec = self.spec_cutter
     local rice = RealisticHeaderEdge.riceFruitType
@@ -123,7 +123,7 @@ function RealisticHeaderEdge:onCutterUpdateTick(dt, isActiveForInput, isActiveFo
     end
 end
 
--- 5. Styr start og stop af mejetærskerens snitter-effekt
+-- 6. Styr start og stop af mejetærskerens snitter-effekt
 function RealisticHeaderEdge:onCombineUpdateTick(dt, isActiveForInput, isActiveForInputIgnoreSelection, isSelected)
     local spec = self.spec_combine
     local rice = RealisticHeaderEdge.riceFruitType

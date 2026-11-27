@@ -1,6 +1,6 @@
 # Field Edge Harvesting
 
-<img src="FEH-icon.png" alt="Field Edge Harvesting mod icon" width="200">
+<img src="icons/FEH-icon.png" alt="Field Edge Harvesting mod icon" width="200">
 
 **A realism-focused mod for Farming Simulator 25**
 
@@ -64,3 +64,4 @@ License to be determined.
 <img src="screenshots/Skærmbillede 2026-11-24 190701.png" alt="Field Edge Harvesting in action sreenshot" width="600">
 <img src="screenshots/Skærmbillede 2026-11-24 191625.png" alt="Field Edge Harvesting in action sreenshot" width="600">
 <img src="screenshots/Skærmbillede 2026-11-24 190953.png" alt="Field Edge Harvesting in action sreenshot" width="600">
+<img src="screenshots/Skærmbillede 2026-11-24 191604.png" alt="Field Edge Harvesting in action sreenshot" width="600">

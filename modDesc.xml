@@ -51,7 +51,7 @@ De ønskes hermed en god høst.
         ]]></da>
     </description>
 
-    <iconFilename>FEH-icon.dds</iconFilename>
+    <iconFilename>icons/FEH-icon.dds</iconFilename>
 
     <multiplayer supported="true"/>
 

@@ -1,7 +1,7 @@
 -- Field Edge Harvesting --
 -- Aksel v --
 -- 23 November 2026 --
--- version: 1.0.0.0 --
+-- version: 0.1.0.0 --
 --[[ status and functions this version
 status:
 first version of the mod
@@ -13,6 +13,8 @@ feel free to suggest ideas
 ]]--
 
 -- original lua kode til FEH moddet --
+
+-- comments are in danish, this will be translated to english in the final version --
 
 RealisticHeaderEdge = {}
 
